@@ -81,11 +81,8 @@ int main(int argc, char ** argv) {
                     //printf("%s", buffer);
                 }
             }
+            // Отправляем данные 3 пайпу
             written_bytes = write(pipe_2[1], buffer, read_bytes);
-            if (read_bytes > 0) {
-                // Отправляем данные 3 пайпу
-                written_bytes = write(pipe_2[0], buffer, read_bytes);
-            }
             printf("process_2: Complete\n");
             close(pipe_2[1]);
             close(pipe_1[0]);
