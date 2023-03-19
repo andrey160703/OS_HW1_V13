@@ -1,0 +1,5 @@
+#INCLUDE <IOSTREAM>
+
+INT MAIN() {
+    STD::COUT << "hELLO WORLD!";
+}
